@@ -151,7 +151,7 @@ public:
         //   3. Allocate new memory: new char[m_length + 1]
         //   4. Copy newData into m_data using strcpy()
         delete[] m_data;
-        strlen(newData);
+        m_length=strlen(newData);
         m_data=new char[m_length + 1];
         strcpy(m_data,newData);
     }
